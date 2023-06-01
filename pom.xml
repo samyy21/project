@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.paytm.pgplus.upipsphandler</groupId>
+	<artifactId>upipsp</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>upipsp</name>
+	<description>upipsp-handler</description>
+	<properties>
+		<java.version>17</java.version>
+		<org.springframework-version>4.2.4.RELEASE</org.springframework-version>
+		<guava.version>17.0</guava.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-webflux</artifactId>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.paytm.pgplus</groupId>-->
+<!--			<artifactId>redis-bridge</artifactId>-->
+<!--			<version>58.5.0-SNAPSHOT</version>-->
+<!--		</dependency>-->
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>pg-native</artifactId>
+			<version>58.5.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>emi-subvention-facade</artifactId>
+			<version>58.5.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>payloadvault</artifactId>
+			<version>58.5.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>pgproxy-biz</artifactId>
+			<version>58.5.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+			<version>1.5.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>supercash-facade</artifactId>
+			<version>58.5.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>pgproxy-cashier</artifactId>
+			<version>58.5.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>base-common</artifactId>
+			<version>58.5.0-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.google.guava</groupId>-->
+<!--			<artifactId>guava</artifactId>-->
+<!--			<version>18.0</version>-->
+<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>4.1.7.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sns</artifactId>
+			<version>2.18.18</version>
+		</dependency>
+
+
+
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.blueconic</groupId>
+            <artifactId>browscap-java</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+    </dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
